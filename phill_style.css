@@ -1,0 +1,225 @@
+img{
+  max-width: 100%;
+}
+
+#global {
+  color: #594846;
+  font-family: sans-serif, "Times New Roman", serif;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+header {
+  font-size: 1em;
+  border: solid #594846;
+  border-width: 2px 0;
+  padding: 0.25em;
+  text-align: center;
+  font-variant: small-caps;  
+  margin-bottom: 1.15em;
+}
+
+footer {
+  text-align: center;      
+  font-style: italic;
+  padding: 0.25em;
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+nav ul li {
+  text-align: center;
+  display: block;
+  float: left;
+}
+nav li a {
+  font-variant: small-caps;
+  text-decoration: none;
+}
+nav {
+  min-height: 25px;
+}
+nav ul li {
+  width: 427px; /* 960/3 */
+}
+
+p {
+  margin: 0.5em 0.25em;
+}
+
+  #col1, #col2, #col3, #col4 {
+    
+  }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  #global {
+    
+  }
+
+  #col1, #col2, #col3, #col4 {
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 25%;
+    padding: 1em;      
+    float: left;
+  }
+
+  nav ul li {
+  width: 320.25px; /* 1281px/3 */
+}
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  #global {  
+    
+   }  
+
+  #col1, #col2, #col3, #col4 {
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 25%;
+    padding: 1em;      
+    float: left;
+  }
+
+  nav ul li {
+    width: 256.25px; /* 1281px/3 */
+  }
+    
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  #global {
+    
+  }
+
+    #col1, #col2 {
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 50%;
+    padding: 1em;      
+    float: left;
+  }
+
+  #col3, #col4 {    
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 50%;
+    padding: 1em;      
+    float: left;
+  }
+
+  nav ul li {
+    width: 192px; /* 1281px/3 */
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  #global {    
+  }
+
+  #col1, #col2 {
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 50%;
+    padding: 1em;
+    float: left;
+  }
+
+  #col3, #col4 {
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 50%;
+    padding: 1em;
+    float: left;
+  }
+
+  nav ul li {
+    width: 120.25px; /* 1281px/3 */
+  }
+    nav ul li {
+    text-align: left;
+    display: inline;
+    float: left;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 381px) and (max-width: 480px) {
+  
+  #global {
+    
+  }
+  
+  #col1, #col2, #col3, #col4 {
+    box-sizing: border-box;
+    background-color: gray;
+    text-align: center;
+    border: 1px solid white;
+    width: 100%;
+    padding: 1em;      
+    float: none;
+  }
+
+   nav ul li {
+    text-align: center;
+    display: inline;
+    float: left;
+  }
+
+  nav ul li {
+    width: 95.25px; /* 1281px/3 */
+  }
+
+  nav ul li {
+    text-align: left;
+    display: inline;
+    float: left;
+  }
+}
