@@ -53,9 +53,28 @@ p {
   margin: 0.5em 0.25em;
 }
 
-  #col1, #col2, #col3, #col4 {
+#col1, #col2, #col3, #col4 {
     
-  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+#div-table {
+  overflow-x:auto;
+  overflow-y:auto;
+}
+
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -78,7 +97,7 @@ p {
   }
 
   nav ul li {
-  width: 320.25px; /* 1281px/3 */
+  width: 400px; /* 1281px/3 */
 }
   
 }
@@ -105,7 +124,7 @@ p {
   }
 
   nav ul li {
-    width: 256.25px; /* 1281px/3 */
+    width: 300px; /* 1281px/3 */
   }
     
 }
@@ -142,7 +161,7 @@ p {
   }
 
   nav ul li {
-    width: 192px; /* 1281px/3 */
+    width: 200px; /* 1281px/3 */
   }
 }
 
@@ -177,12 +196,12 @@ p {
   }
 
   nav ul li {
-    width: 120.25px; /* 1281px/3 */
+    width: 160.3333333333333px; /* 1281px/3 */
   }
     nav ul li {
     text-align: left;
-    display: inline;
-    float: left;
+    display: block;
+    float: none;
   }
 }
 
@@ -191,7 +210,7 @@ p {
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 381px) and (max-width: 480px) {
+@media (min-width: 365px) and (max-width: 480px) {
   
   #global {
     
@@ -207,19 +226,13 @@ p {
     float: none;
   }
 
-   nav ul li {
-    text-align: center;
-    display: inline;
-    float: left;
-  }
-
   nav ul li {
-    width: 95.25px; /* 1281px/3 */
+    width: 121.6666666666667px; /* 1281px/3 */
   }
 
   nav ul li {
     text-align: left;
-    display: inline;
-    float: left;
+    display: block;
+    float: none;
   }
 }
